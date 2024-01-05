@@ -12,6 +12,7 @@ public class Client {
             PrintNumber printNumber = new PrintNumber(i);
             executorService.execute(printNumber);
         }
+        executorService.shutdown();
     }
 
 }
